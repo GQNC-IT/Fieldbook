@@ -1,0 +1,165 @@
+
+What is Fieldbook?
+
+Fieldbook is a software tool that anyone can use to collect data on any "object". An object could be a singleton, or it could be a group representing a collection of singletons. Regardless of its nature, data collected on any object comes, at the very least, in the form of an unordered quintuple as {object_id, property_name, property_value, scale_used, method_used}. An example of this is {50533, "amylose content", "intermediate", "classification", "ISO 6647-1:2007"}. In plain language, this quintuple describes IR64 as having an intermediate amylose content using the ISO 6647-1:2007 method. A similar measurement data could be {"IR18348-36-3-3", "amylose content", "23.2", "percentage", "ISO 6647-1:2007"}. The latter is semantically equivalent to the former though expressed differently. Other fields may be added to this data definition. A few of these are: user_id, date_time, mobile_device_id, gps_location, ...
+
+Given the various ways that the same meaning gets expressed, it is important therefore that any researcher adheres to a global controlled vocabulary. The author of this software advocates that users obtain their data collection "language" from that one published by www.cropontology.org. Fieldbook stores the current controlled vocabulary as a warehouse table inside each fieldbook file together with all observation data. This makes the data stored in each fieldbook file impervious to changes to the globally curated crop ontology. 
+
+What are its system requirements?
+
+The minimum Android SDK version for Fieldbook to run is Android 2.2 (Froyo). New releases of Fieldbook would be compiled against the latest Android SDK release. At this time (2012-09-29), the current release is Android v4.1 (Jelly Bean). 
+
+What are the recommended system mobile specifications?
+
+It his highly recommended that the mobile device running Fieldbook has wifi, bluetooth, GPS sensor and earphone socket. Water resistance is also highly recommended to protect it from getting damaged when accidentally dunked in water. If data collection happens under bright sunlight, an antiglare film installed on the mobile device's screen would be very handy.
+
+Where is the data stored?
+
+Data is stored in a microSD card. The minimum recommended size is 8GB. Most devices nowadays support 32GB. Go for it.
+
+Is my data secure?
+
+Do you protect your phone from eavesdroppers and from being stolen? If you say Yes, then your data is secure. Securing your data is your primary responsibility. A simple but effective way is to remove the microSD from its slot and stashing it in a place that you consider secure. Remember that if you lose your microSD, you lose your data as well. Fieldbook provides an extra convenience of "sharing" your data via email or bluetooth. Though not a security feature, it allows you to have multiple backups of your fieldbook files in the "cloud". (Fieldbook, btw, is backed up this way.) **FIELDBOOK GUARANTEE**: No fieldbook file shall be permanently deleted (a.k.a. data lost forever) from within the application unless due to a hardware failure (i.e., microSD damaged due to normal wear-and-tear, total mobile phone malfunction, ...) 
+
+Will all GMail clients (from different Android versions) work for sharing fieldbook files via email?
+
+Yes. BUT, those without a native feature to save attachments result to "altered" versions of the original file. Always check the MD5 hash of the one you saved with the one sent. If both have the same MD5 hashes, then you are good to go. Otherwise, you might have a problem with tracing the authenticity of your fieldbook file if you use something that has a different digital signature.
+
+How about sharing by Bluetooth?
+
+Files sent by Bluetooth should come out identical. Identical in Fieldbook terms are files with the same MD5 hashes. 
+
+Will Fieldbook slow me down?
+
+No, is the obvious answer. It all actually depends on how you use it. Fieldbook is designed to speed up the data collection activity while at the same time preventing erroneous data entry. It is designed to be paired with a bluetooth barcode reader to read in both the object_id and the property_value. You are cautioned against using the onscreen keyboard. It's evil.
+
+Where and when was Fieldbook developed and who is the person responsible?
+
+Fieldbook was developed at the International Rice Research Institute by Roslen Anacleto, Senior Associate Scientist at the Grain Quality and Nutrition Center. The author envisioned that this project would eventually be sustained by a growing community of users and developers.
+
+Is Fieldbook Open-source?
+
+Yes. It uses the Apache License v2.0. The design and implementation details are free-access to developers who would commit to carry-on the project. Users shall continue to benefit from free use and free distribution of every released version.
+
+How can I be involved?
+
+Anyone can participate by actively using the system, providing feedback when something is not working right, giving suggestions for improvements, or by actively taking part in the development of the system. 
+
+Is there a development roadmap for Fieldbook?
+
+Yes. If you are interested to know what the future is envisioned to be, feel free to email Roslen at r.anacleto@irri.org. He prefers to communicate by email or google talk.
+
+Is it free?
+
+Yes.
+
+Can I sell it?
+Yes. But, it's very likely that nobody will buy from you because it is freely available to all.
+
+How can I help share Fieldbook to others?
+
+It's likely that you got your Fieldbook "installer" by email. Distribution channel would remain that way for the forseeable future?
+
+Why not put it up at Google Play?
+
+Fieldbook is Google Play ready. But, the author prefers to share the software through the email Web.
+
+Is this software the same as FieldLab?
+
+No. The only similarity Fieldbook has with FieldLab is the first syllable of their names. :) Seriously, FieldLab is developed to integrate well with ICIS. Fieldbook goes beyond that and could accommodate any kind of data as long as the data is structured as described in the introductory paragraphs of this text.
+
+There is something named Fieldbook for ICIS. Is this that software?
+
+No. The author even hasn't seen or been involved in anything leading to the development of that software. The similarity in names could simply be due to the unanimity of purpose: everyone simply needs something that could be used for data collection regardless of the environment the he/she is working in, i.e., field environment, or laboratory, or elsewhere!
+
+Can I use Fieldbook in method development?
+
+Yes. You could even use it to record your gas mileage, household expenses, ah-counter for your dreaded Philosophy professor, and more! Usage scenarios vary significantly. The usage requirement does not: data structure.
+
+How can I thank the author of Fieldbook?
+
+:) Here are a few suggestions:
+	* Leave him Capuccino credits at the IRRI Coffeeshop if you happen to pass by. (You may leave your email address so the author could say "Thanks!".)
+	* Send him an email saying how you are using Fieldbook and what improvements you think should make the application better. 
+	* Reporting any bugs you encountered. 
+	* By using email as the only means you choose to communicate with him. (The author believes that communicating by phone is a tremendous waste of time and significantly adds to the office noise level.) If you *really* need synchronous (aka real-time) communication, please use Google (text) chat. It's highly likely that you can find him online in GMail. If you are not from IRRI, you can find him at roslen@gmail.com.
+
+-----
+
+
+[Credits] <-- growing list
+
+1. Android platform developers (http://d.android.com)
+2. ZXing developers (http://code.google.com/p/zxing/)
+3. Jake Wharton (http://actionbarsherlock.com)
+
+
+[Acknowledgment] <-- growing list
+1. Mylah Rystie Anacleto - for participating in preliminary design discussions
+2. Manfred Cardenas - for allowing the author to use his Samsung Galaxy Y (Gingerbread) for testing purposes
+3. Rosa Paula Cuevas - for agreeing to be one of the pilot users (Laboratory and Field use-cases)
+
+
+[Fieldbook ChangeLog]
+
+[v0.7] 2012-10-01	Roslen Anacleto <r.anacleto@irri.org>
+* Created a module for 1D/2D barcode/QRcode scanning
+* FieldbookActivity, RetrieveFieldbookActivity, RetrieveFieldbookFromSharesActivity
+	* Modified the onItemClickListener to display the file's last modified date and time.
+
+[v0.6] 2012-09-30	Roslen Anacleto <r.anacleto@irri.org>
+* Updated the about_fieldbook.txt
+* Added "recycle_bin" in the archives directory
+	* This contains the fieldbook files deleted while at the RetrieveFieldbookActivity screen
+* FieldbookActivity
+	* Add long item click listener stub
+	* Add item click listener stub
+* RetrieveFieldbookActivity
+	* Add delete to the ActionMode items
+	* Add retrieve from mail, retrieve from bluetooth to the overflow menuitems
+	* Removed ListView click listener..
+	* Picked appropriate icons for the overflow menuitems
+* FieldbookApplication
+	* added email and bluetooth directories
+* RetrieveFieldbookFromSharesActivity
+	* takes care of getting fieldbook from all share sources (e.g., mail, bluetooth, ...)
+	* retrieve moves from share directory to archives directory
+	* delete *permanently* the file/s from the shares directory
+	* Note: files sent as email attachments need to be saved using a native call from the email client application (gmail). Otherwise, the application used to save the attachment will not replicate the original file sent. GMail in Froyo is not recommended for sharing by email (it has no native feature to save attachments). GMail in ICS and Honeycomb works. It seems that post-Froyo GMail clients that have a native feature to save attachments works well. 
+	
+
+[v0.5] 2012-09-29	Roslen Anacleto <r.anacleto@irri.org>
+* RetrieveFieldbookActivity
+	* stated from the "Retrieve" menu button in FieldbookActivity
+	* Added two ActionMode items: Retrieve and Share
+	* Allows sending of files via email or bluetooth from the archive folder
+	* Added "Refresh" menuitem (to refresh the contents of the archives)
+	* Added filesystem check.
+* FieldbookActivity
+	* Added "Refresh" menuitem to update the ArrayList adapter when new fieldbook files are added
+	* (Note that fieldbook files could be added outside of the Fieldbook app's interface.)
+	* Added code to check for the presence of required directories at startup (onCreate)
+	* (Just to be sure that the directories are there...)
+	* Added filesystem check.
+* AboutFieldbookActivity
+	* Added the about_fieldbook.txt and the initial verbage.
+	* updated the "About Fieldbook" menuitem to start the corresponding activity 
+
+[v0.4] 2012-09-28	Roslen Anacleto	<r.anacleto@irri.org>
+* FieldbookActivity
+	* Added New, Retrieve, About Fieldbook overflow action items
+	* Completed the "Remove" menuitem 
+	* Added confirmation dialog box
+
+[v0.3] 2012-09-27 	Roslen Anacleto <r.anacleto@irri.org>
+* FieldbookActivity
+	* Enhancements to the ListView for studies
+	* Addition of ShareActionProviders to allow easy data sharing
+	
+[v0.2] 2012-09-26	Roslen Anacleto <r.anacleto@irri.org>
+* FieldbookActivity
+	* ListView for the studies is completed
+	* Code refactoring to accomodate the overflow action items
+
+[v0.1] 2012-09-21	Roslen Anacleto	<r.anacleto@irri.org>
+* Date of birth
